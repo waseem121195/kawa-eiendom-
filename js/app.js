@@ -29,9 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	// enkel form-submission (placeholder)
-	document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
-		e.preventDefault();
-		alert('Takk! Vi tar kontakt så snart som mulig.');
-		e.target.reset();
+	document.querySelectorAll('.contact-form').forEach(form => {
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			alert('Takk! Vi tar kontakt så snart som mulig.');
+			form.reset();
+		});
 	});
 });
