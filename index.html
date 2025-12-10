@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="nb">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Kawa Eiendom AS — Leiligheter i Oslo sentrum</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<a class="brand" href="#">Kawa Eiendom AS</a>
+			<nav class="nav">
+				<ul>
+					<li><a href="#homes">Leiligheter</a></li>
+					<li><a href="#how">Hvordan det fungerer</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+			</nav>
+			<button id="navToggle" class="nav-toggle" aria-label="Åpne meny">☰</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero-inner container">
+				<div class="hero-text">
+					<h1>Kawa Eiendom — Moderne leiligheter i Oslo sentrum</h1>
+					<p>Skreddersydd for korttidsutleie (Airbnb-konsept). Sentral beliggenhet, komplett møblert, rask innsjekk.</p>
+					<a class="btn primary" href="#homes">Se ledige leiligheter</a>
+				</div>
+				<div class="hero-media">
+					<!-- Bytt ut med ekte bilder -->
+					<div class="hero-carousel">
+						<img src="assets/placeholder1.jpg" alt="Leilighet 1">
+						<img src="assets/placeholder2.jpg" alt="Leilighet 2">
+						<img src="assets/placeholder3.jpg" alt="Leilighet 3">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="homes" class="container section cards">
+			<h2>Utvalgte leiligheter</h2>
+			<div class="card-grid">
+				<article class="card reveal">
+					<img src="assets/placeholder1.jpg" alt="">
+					<div class="card-body">
+						<h3>Studio ved Karl Johans gate</h3>
+						<p>Perfekt for par eller forretningsreisende. 28 m², moderne kjøkken.</p>
+						<div class="card-meta">Fra 750 NOK/natt</div>
+						<a class="btn" href="#contact">Book nå</a>
+					</div>
+				</article>
+
+				<article class="card reveal">
+					<img src="assets/placeholder2.jpg" alt="">
+					<div class="card-body">
+						<h3>1-roms på Aker Brygge</h3>
+						<p>Fantastisk utsikt, gåavstand til restauranter og trikk.</p>
+						<div class="card-meta">Fra 900 NOK/natt</div>
+						<a class="btn" href="#contact">Book nå</a>
+					</div>
+				</article>
+
+				<article class="card reveal">
+					<img src="assets/placeholder3.jpg" alt="">
+					<div class="card-body">
+						<h3>2-roms nær Oslo S</h3>
+						<p>Romslig, familievennlig og nær kollektivtransport.</p>
+						<div class="card-meta">Fra 1200 NOK/natt</div>
+						<a class="btn" href="#contact">Book nå</a>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id="how" class="container section how">
+			<h2>Hvordan fungerer det?</h2>
+			<div class="steps">
+				<div class="step reveal">
+					<strong>1</strong>
+					<p>Velg leilighet og dato</p>
+				</div>
+				<div class="step reveal">
+					<strong>2</strong>
+					<p>Rask bekreftelse</p>
+				</div>
+				<div class="step reveal">
+					<strong>3</strong>
+					<p>Sjekk inn og nyt oppholdet</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="container section contact">
+			<h2>Kontakt oss</h2>
+			<form class="contact-form">
+				<input type="text" name="name" placeholder="Navn" required>
+				<input type="email" name="email" placeholder="E-post" required>
+				<textarea name="message" placeholder="Ønsket leilighet / Datoer"></textarea>
+				<button class="btn primary" type="submit">Send forespørsel</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© Kawa Eiendom AS — Leiligheter i Oslo sentrum</p>
+		</div>
+	</footer>
+
+	<script src="js/app.js" defer></script>
+</body>
+</html>
