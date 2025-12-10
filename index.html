@@ -1,107 +1,233 @@
-<!doctype html>
-<html lang="nb">
+<!DOCTYPE html>
+<html lang="no">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Kawa Eiendom AS — Leiligheter i Oslo sentrum</title>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>Kawa Eiendom AS – Profesjonell Airbnb-forvaltning i Oslo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kawa Eiendom AS hjelper utleiere med profesjonell korttidsutleie på Airbnb i Oslo. Vi håndterer alt – innsjekk, utsjekk, vask, vedlikehold, styling, annonsering og gjestekommunikasjon – mot kun 25 % provisjon.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header class="site-header">
-		<div class="container">
-			<a class="brand" href="index.html">Kawa Eiendom AS</a>
-			<nav class="nav">
-				<ul>
-					<li><a href="#homes">Leiligheter</a></li>
-					<li><a href="#how">Hvordan det fungerer</a></li>
-					<li><a href="#contact">Kontakt</a></li>
-				</ul>
-			</nav>
-			<button id="navToggle" class="nav-toggle" aria-label="Åpne meny">☰</button>
-		</div>
-	</header>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Kawa Eiendom AS</a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Meny">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#for-utleiere">For utleiere</a></li>
+          <li><a href="#hvordan">Hvordan det fungerer</a></li>
+          <li><a href="#leiligheter">Leiligheter</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="booking.html" class="nav-cta">Book leilighet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-	<main>
-		<section class="hero">
-			<div class="hero-inner container">
-				<div class="hero-text">
-					<h1>Kawa Eiendom — Moderne leiligheter i Oslo sentrum</h1>
-					<p>Skreddersydd for korttidsutleie (Airbnb-konsept). Sentral beliggenhet, komplett møblert, rask innsjekk.</p>
-					<a class="btn primary" href="#homes">Se ledige leiligheter</a>
-				</div>
-				<div class="hero-media">
-					<div class="hero-carousel">
-						<img src="assets/apt1.jpg" alt="Leilighet 1">
-						<img src="assets/apt2.jpg" alt="Leilighet 2">
-						<img src="assets/apt3.jpg" alt="Leilighet 3">
-					</div>
-				</div>
-			</div>
-		</section>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="badge">Airbnb management i Oslo sentrum</p>
+          <h1>Kawa Eiendom — Moderne leiligheter og fullservice forvaltning</h1>
+          <p class="lead">
+            Vi hjelper utleiere som vil tjene mer og jobbe mindre. Kawa Eiendom håndterer
+            annonsering, styling, gjestekommunikasjon, innsjekk, utsjekk, vask og vedlikehold
+            – mot kun <strong>25 % provisjon av leieinntektene per måned</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="booking.html" class="btn btn-primary">Se ledige leiligheter</a>
+            <a href="#kontakt" class="btn btn-outline">Book gratis rådgivning</a>
+          </div>
+          <ul class="hero-points">
+            <li>Økt leieinntekt gjennom smart prising og profesjonell presentasjon</li>
+            <li>Full gjestekommunikasjon – vi er din digitale resepsjon</li>
+            <li>Styling, foto, vask og vedlikehold inkludert i tjenesten</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <div class="hero-card">
+            <h3>For utleiere</h3>
+            <p>Du eier leiligheten. Vi gjør resten.</p>
+            <ul>
+              <li>Airbnb / Booking.com-annonsering</li>
+              <li>Profesjonelle bilder og styling</li>
+              <li>Nøkkel-/kodebasert innsjekk 24/7</li>
+              <li>Fast vaskepartner</li>
+            </ul>
+            <a href="#for-utleiere" class="hero-link">Se hvordan det fungerer →</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section id="homes" class="container section cards">
-			<h2>Utvalgte leiligheter</h2>
-			<div class="card-grid">
-				<article class="card reveal">
-					<img src="assets/apt1.jpg" alt="">
-					<div class="card-body">
-						<h3>Studio ved Karl Johans gate</h3>
-						<p>Perfekt for par eller forretningsreisende. 28 m², moderne kjøkken.</p>
-						<div class="card-meta">Fra 750 NOK/natt</div>
-						<a class="btn" href="booking.html">Book nå</a>
-					</div>
-				</article>
+    <!-- FOR UTLEIERE -->
+    <section id="for-utleiere" class="section">
+      <div class="container two-column">
+        <div>
+          <h2>For deg som eier leilighet – vi driver hele utleien</h2>
+          <p>
+            Kawa Eiendom AS spesialiserer seg på korttidsutleie i Oslo sentrum.
+            Vi samarbeider med eiere som ønsker bedre økonomi, fleksibilitet og
+            kontroll, uten å måtte være «på» hele tiden.
+          </p>
+          <ul class="check-list">
+            <li>Vi setter opp og optimaliserer annonsene dine (Airbnb, Booking.com m.m.).</li>
+            <li>Vi tilbyr styling og full møblering ved behov.</li>
+            <li>Vi følger opp alle henvendelser, vurderer gjester og svarer raskt.</li>
+            <li>Vi organiserer vask, sengetøy og grunnleggende vedlikehold.</li>
+            <li>Du får full oversikt over inntekter, kalender og rapporter.</li>
+          </ul>
+          <p><strong>Vår modell:</strong> Du får 75 % av leieinntektene. Vi tar 25 % provisjon for å drifte hele utleien.</p>
+          <a href="#kontakt" class="btn btn-primary mt-1">Snakk med oss om din leilighet</a>
+        </div>
+        <div class="card-highlight">
+          <h3>Hva kan du forvente i praksis?</h3>
+          <ul>
+            <li>Typisk høyere belegg enn tradisjonell langtidsleie.</li>
+            <li>Mer fleksibilitet – bruk leiligheten selv når du ønsker.</li>
+            <li>Mindre slitasje gjennom klare husregler og profesjonell oppfølging.</li>
+            <li>Trygg partner som allerede driver korttidsutleie i Oslo sentrum.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-				<article class="card reveal">
-					<img src="assets/apt2.jpg" alt="">
-					<div class="card-body">
-						<h3>1-roms på Aker Brygge</h3>
-						<p>Fantastisk utsikt, gåavstand til restauranter og trikk.</p>
-						<div class="card-meta">Fra 900 NOK/natt</div>
-						<a class="btn" href="booking.html">Book nå</a>
-					</div>
-				</article>
+    <!-- HVORDAN DET FUNGERER -->
+    <section id="hvordan" class="section section-alt">
+      <div class="container">
+        <h2>Slik fungerer det – steg for steg</h2>
+        <div class="steps">
+          <article class="step">
+            <span class="step-number">1</span>
+            <h3>Uforpliktende gjennomgang</h3>
+            <p>Vi tar en prat og ser på leiligheten din (digitalt eller fysisk). Du får et estimat på mulig månedsinntekt.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">2</span>
+            <h3>Styling, foto og oppsett</h3>
+            <p>Vi sørger for styling, møblering ved behov, profesjonelle bilder og oppsett av annonser.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">3</span>
+            <h3>Drift og gjestereise</h3>
+            <p>Vi håndterer bookinger, priser, innsjekk, utsjekk, vask, vedlikehold og kundeservice.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">4</span>
+            <h3>Rapport og utbetaling</h3>
+            <p>Hver måned får du rapport og utbetaling av din andel av leieinntektene – enkelt og oversiktlig.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-				<article class="card reveal">
-					<img src="assets/apt3.jpg" alt="">
-					<div class="card-body">
-						<h3>2-roms nær Oslo S</h3>
-						<p>Romslig, familievennlig og nær kollektivtransport.</p>
-						<div class="card-meta">Fra 1200 NOK/natt</div>
-						<a class="btn" href="booking.html">Book nå</a>
-					</div>
-				</article>
-			</div>
-		</section>
+    <!-- LEILIGHETER (TEASER) -->
+    <section id="leiligheter" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Våre utvalgte leiligheter i Oslo</h2>
+            <p>Moderne, fullt møblerte leiligheter perfekt for både jobb- og fritidsreisende.</p>
+          </div>
+          <a href="booking.html" class="btn btn-outline">Se alle og book →</a>
+        </div>
+        <div class="cards-grid">
+          <article class="card property-card">
+            <div class="card-media card-media-placeholder">Bilde leilighet</div>
+            <div class="card-body">
+              <h3>Studio ved Karl Johans gate</h3>
+              <p>Perfekt for én eller to personer, midt i hjertet av Oslo.</p>
+              <p class="meta">1–2 gjester · 1 seng · 20 m²</p>
+            </div>
+          </article>
+          <article class="card property-card">
+            <div class="card-media card-media-placeholder">Bilde leilighet</div>
+            <div class="card-body">
+              <h3>1-roms på Aker Brygge</h3>
+              <p>Vannutsikt, nær restauranter og kollektivtransport.</p>
+              <p class="meta">2–3 gjester · 1 soverom · balkong</p>
+            </div>
+          </article>
+          <article class="card property-card">
+            <div class="card-media card-media-placeholder">Bilde leilighet</div>
+            <div class="card-body">
+              <h3>2-roms nær Oslo S</h3>
+              <p>Familievennlig og praktisk for pendlere og weekendgjester.</p>
+              <p class="meta">4 gjester · 2 senger · heis</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-		<section id="how" class="container section how">
-			<h2>Hvordan fungerer det?</h2>
-			<div class="steps">
-				<div class="step reveal"><strong>1</strong><p>Velg leilighet og dato</p></div>
-				<div class="step reveal"><strong>2</strong><p>Rask bekreftelse</p></div>
-				<div class="step reveal"><strong>3</strong><p>Sjekk inn og nyt oppholdet</p></div>
-			</div>
-		</section>
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section section-alt">
+      <div class="container two-column">
+        <div>
+          <h2>La oss se på inntektspotensialet for din leilighet</h2>
+          <p>
+            Fyll ut skjemaet, så tar vi kontakt innen én arbeidsdag.  
+            Samtalen er uforpliktende, og du får et enkelt estimat på hva du kan tjene.
+          </p>
+          <ul class="check-list">
+            <li>Spesielt godt egnet for leiligheter sentralt i Oslo.</li>
+            <li>Mulighet for full møblering og styling levert av Kawa Eiendom.</li>
+            <li>Vi jobber allerede med korttidsutleie og vet hva som gir resultater.</li>
+          </ul>
+        </div>
+        <form class="contact-form" method="post" action="https://formspree.io/f/your-form-id">
+          <div class="form-row">
+            <label for="name">Navn</label>
+            <input id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">E-post</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone">
+          </div>
+          <div class="form-row">
+            <label for="address">Adresse på leilighet</label>
+            <input id="address" name="address">
+          </div>
+          <div class="form-row">
+            <label for="message">Kort om leiligheten / behov</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send forespørsel</button>
+          <p class="form-note">Du forplikter deg ikke til noe – vi tar en prat først.</p>
+        </form>
+      </div>
+    </section>
+  </main>
 
-		<section id="contact" class="container section contact">
-			<h2>Kontakt oss</h2>
-			<form class="contact-form">
-				<input type="text" name="name" placeholder="Navn" required>
-				<input type="email" name="email" placeholder="E-post" required>
-				<textarea name="message" placeholder="Ønsket leilighet / Datoer"></textarea>
-				<button class="btn primary" type="submit">Send forespørsel</button>
-			</form>
-		</section>
-	</main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Kawa Eiendom AS</h3>
+        <p>Korttidsutleie og Airbnb-forvaltning i Oslo sentrum.</p>
+      </div>
+      <div>
+        <p>Org.nr: 000 000 000</p>
+        <p>E-post: <a href="mailto:post@kawaeiendom.no">post@kawaeiendom.no</a></p>
+        <p>Telefon: <a href="tel:+47xxxxxxxx">+47 xx xx xx xx</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="#for-utleiere">For utleiere</a>
+        <a href="booking.html">Book leilighet</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Kawa Eiendom AS. Alle rettigheter reservert.</p>
+    </div>
+  </footer>
 
-	<footer class="site-footer">
-		<div class="container">
-			<p>© Kawa Eiendom AS — Leiligheter i Oslo sentrum</p>
-		</div>
-	</footer>
-
-	<script src="js/app.js" defer></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
-

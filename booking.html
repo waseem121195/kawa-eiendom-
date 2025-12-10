@@ -1,39 +1,186 @@
-<!doctype html>
-<html lang="nb">
+<!DOCTYPE html>
+<html lang="no">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Book — Kawa Eiendom AS</title>
-	<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>Book leilighet – Kawa Eiendom AS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Book moderne leiligheter i Oslo gjennom Kawa Eiendom AS. Korttidsutleie for jobb- og fritidsreisende.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header class="site-header">
-		<div class="container">
-			<a class="brand" href="index.html">Kawa Eiendom AS</a>
-		</div>
-	</header>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Kawa Eiendom AS</a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Meny">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html#for-utleiere">For utleiere</a></li>
+          <li><a href="index.html#hvordan">Hvordan det fungerer</a></li>
+          <li><a href="#leiligheter">Leiligheter</a></li>
+          <li><a href="#booking">Booking</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-	<main class="container section">
-		<h1>Book leilighet</h1>
-		<p>Dette er en enkel bookingside. Integrer tredjeparts booking eller legg til eget skjema/API her.</p>
+  <main>
+    <section class="hero hero-small">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Book moderne leiligheter i Oslo</h1>
+          <p class="lead">
+            Våre seks leiligheter ligger sentralt i Oslo med enkel tilgang til kollektivtransport,
+            servering og kulturtilbud. Velg leilighet, datoer og antall gjester – så regner vi ut
+            et estimat og sender deg videre til vår bookingside.
+          </p>
+        </div>
+      </div>
+    </section>
 
-		<!-- Enkel mockup for booking -->
-		<form class="contact-form">
-			<input type="text" name="name" placeholder="Navn" required>
-			<input type="email" name="email" placeholder="E-post" required>
-			<input type="text" name="apt" placeholder="Leilighet (f.eks. Studio ved Karl Johans gate)" required>
-			<input type="date" name="from" required>
-			<input type="date" name="to" required>
-			<button class="btn primary" type="submit">Send forespørsel</button>
-		</form>
-	</main>
+    <!-- LEILIGHETER -->
+    <section id="leiligheter" class="section">
+      <div class="container">
+        <h2>Våre leiligheter</h2>
+        <div class="cards-grid">
+          <article class="card property-card">
+            <img src="assets/apt1.jpg" alt="Studio ved Karl Johans gate" class="card-media">
+            <div class="card-body">
+              <h3 data-apartment-name>Studio ved Karl Johans gate</h3>
+              <p>Perfekt for par eller forretningsreisende som vil bo midt i sentrum.</p>
+              <p class="meta">1–2 gjester · 1 seng · 20 m² · Heis</p>
+              <p class="price">Fra 1 100 kr / natt</p>
+            </div>
+          </article>
 
-	<footer class="site-footer">
-		<div class="container">
-			<p>© Kawa Eiendom AS</p>
-		</div>
-	</footer>
+          <article class="card property-card">
+            <img src="assets/apt2.jpg" alt="1-roms på Aker Brygge" class="card-media">
+            <div class="card-body">
+              <h3 data-apartment-name>1-roms på Aker Brygge</h3>
+              <p>Vannutsikt, kort vei til restauranter og shopping.</p>
+              <p class="meta">2–3 gjester · 1 soverom · balkong</p>
+              <p class="price">Fra 1 400 kr / natt</p>
+            </div>
+          </article>
 
-	<script src="js/app.js" defer></script>
+          <article class="card property-card">
+            <img src="assets/apt3.jpg" alt="2-roms nær Oslo S" class="card-media">
+            <div class="card-body">
+              <h3 data-apartment-name>2-roms nær Oslo S</h3>
+              <p>Rommelig leilighet med kort vei til flytog, tog og buss.</p>
+              <p class="meta">4 gjester · 2 senger · heis</p>
+              <p class="price">Fra 1 600 kr / natt</p>
+            </div>
+          </article>
+
+          <article class="card property-card">
+            <img src="assets/apt4.jpg" alt="Familieleilighet ved St. Hanshaugen" class="card-media">
+            <div class="card-body">
+              <h3 data-apartment-name>Familieleilighet ved St. Hanshaugen</h3>
+              <p>Lys 3-roms med park i nabolaget og gode kollektivforbindelser.</p>
+              <p class="meta">4–5 gjester · 3 senger · balkong</p>
+              <p class="price">Fra 1 800 kr / natt</p>
+            </div>
+          </article>
+
+          <article class="card property-card">
+            <img src="assets/apt5.jpg" alt="Loftsleilighet på Grünerløkka" class="card-media">
+            <div class="card-body">
+              <h3 data-apartment-name>Loftsleilighet på Grünerløkka</h3>
+              <p>Trendy område fylt med kaféer, barer og butikker.</p>
+              <p class="meta">2–3 gjester · 1 soverom · åpen stue</p>
+              <p class="price">Fra 1 500 kr / natt</p>
+            </div>
+          </article>
+
+          <article class="card property-card">
+            <img src="assets/apt6.jpg" alt="Business-leilighet ved Bjørvika" class="card-media">
+            <div class="card-body">
+              <h3 data-apartment-name>Business-leilighet ved Bjørvika</h3>
+              <p>Perfekt for lengre jobbreiser, med eget arbeidsområde og rask WiFi.</p>
+              <p class="meta">1–2 gjester · 1 soverom · kontorpult</p>
+              <p class="price">Fra 1 700 kr / natt</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING-SKJEMA -->
+    <section id="booking" class="section section-alt">
+      <div class="container two-column">
+        <div>
+          <h2>Send forespørsel og få prisestimat</h2>
+          <p>
+            Fyll inn ønsket leilighet, datoer og antall gjester. Vi beregner et estimat basert på
+            våre standardpriser og sender deg videre til vår bookingside (Smoobu) for å fullføre bestillingen.
+          </p>
+          <form id="booking-form" class="booking-form">
+            <div class="form-row">
+              <label for="apartment">Velg leilighet</label>
+              <select id="apartment" name="apartment" required>
+                <option value="">Velg…</option>
+                <option value="apt1">Studio ved Karl Johans gate</option>
+                <option value="apt2">1-roms på Aker Brygge</option>
+                <option value="apt3">2-roms nær Oslo S</option>
+                <option value="apt4">Familieleilighet ved St. Hanshaugen</option>
+                <option value="apt5">Loftsleilighet på Grünerløkka</option>
+                <option value="apt6">Business-leilighet ved Bjørvika</option>
+              </select>
+            </div>
+            <div class="form-row form-row-inline">
+              <div>
+                <label for="checkin">Innsjekk</label>
+                <input type="date" id="checkin" name="checkin" required>
+              </div>
+              <div>
+                <label for="checkout">Utsjekk</label>
+                <input type="date" id="checkout" name="checkout" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="guests">Antall gjester</label>
+              <input type="number" id="guests" name="guests" min="1" max="6" value="2" required>
+            </div>
+            <div class="form-row">
+              <label for="email-booking">E-post</label>
+              <input type="email" id="email-booking" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Beregn pris og gå videre</button>
+            <p id="booking-estimate" class="booking-estimate"></p>
+          </form>
+        </div>
+
+        <div class="card-highlight">
+          <h3>Direktebooking via Smoobu</h3>
+          <p>
+            Kawa Eiendom benytter Smoobu som bookingsystem for å samle alle bookinger på ett sted.
+            Når du er klar til å booke, sendes du videre til vår sikre bookingside.
+          </p>
+          <p class="small">
+            Under kan du legge inn Smoobu sin booking-widget (erstatt placeholder-koden med koden du får inne i Smoobu).
+          </p>
+
+          <!-- PLACEHOLDER FOR SMOOBU-WIDGET -->
+          <div class="smoobu-widget-placeholder">
+            <p><strong>Smoobu booking-widget</strong></p>
+            <p>Her limer du inn script/iframe-koden fra Smoobu når du har satt opp kontoen.</p>
+            <!-- Eksempel (IKKE ekte URL):
+            <iframe src="https://login.smoobu.com/en/booking-engine/YOUR-ID" width="100%" height="600" frameborder="0"></iframe>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Kawa Eiendom AS. Alle rettigheter reservert.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
